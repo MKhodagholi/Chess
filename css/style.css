@@ -407,3 +407,27 @@ section:first-child {
 ------------------------------------------ */
 
 
+/* ------------------------------------------
+            START FOOTER STYLE
+------------------------------------------ */
+
+footer {
+    display: flex;
+    background-color: purple;
+    height: 125px;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 1vw; */
+}
+footer p {
+    font-size: 2vw;
+    color: palevioletred;
+
+    text-align: center;
+}
+
+
+
+/* ------------------------------------------
+            END FOOTER STYLE
+------------------------------------------ */
