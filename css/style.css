@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #ededed;
+}
 
 /* ------------------------------------------
             START HEADER STYLE
@@ -88,4 +91,205 @@ header .header-image img {
 /* ------------------------------------------
             END HEADER STYLE
 ------------------------------------------ */
+
+.content-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ------------------------------------------
+            START MAIN STYLE
+------------------------------------------ */
+.main-area {
+    flex-basis: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-left: 1.5%;
+    margin-top: 20px;
+    flex-grow: 1;
+}
+
+
+
+section {
+    /* background-color: white; */
+    height: 300px;
+    width: 100%;
+}
+
+.section-title {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 2vw;
+    font-size: 2vw;
+}
+
+
+/* ------------------------------------------
+            START TUTORIAL STYLE
+------------------------------------------ */
+
+.posts {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: #ededed;
+}
+
+.post {
+    display: flex;
+    background-color: white;
+    flex-flow: column wrap;
+    flex-basis: 48%;
+    /* flex-grow: 1; */
+    padding: 3vw;
+    margin: 2em 0;
+    align-items: flex-start;
+    position: relative;
+}
+
+.post-title {
+    padding: .6em;
+    font-size: 2vw;
+    margin-bottom: 1em;
+    background-color: pink;
+    border-left: 10px solid purple;
+}
+
+.post-content {
+    background-color: floralwhite;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+
+.post-content p {
+    font-size: 1.3vw;
+    align-self: flex-start;
+    color: #595959;
+}
+
+.post-content ul {
+    padding: 1em 2em; 
+    align-self: flex-start;
+    list-style-type: decimal;
+    font-size: .7vw;
+    color: peru;
+}
+
+.post-content li:hover {
+    font-size: 1.5vw;
+    color: rgb(255, 128, 0);
+}
+
+.post-content li {
+    margin-bottom: 1em;
+    transition: all 0.7s ease-in-out .1s;
+}
+
+.post-content a {
+    color: #595959;
+    font-size: 1vw;
+    text-decoration: none;
+    transition: all .7s ease .1s;
+}
+
+.post-content a:hover {
+    color: black;
+    font-size: 1.5vw;
+}
+
+.read-more {
+    position: absolute;
+    bottom: 1vw;
+    margin-top: 20px;
+}
+
+.read-more a{
+    text-decoration: none;
+    color: khaki;
+    font-size: 1.5vw;
+    background-color: black;
+    padding: 1vw;
+}
+
+
+.post-nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    flex-grow: 1;
+    list-style-type: none;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+}
+
+.post-nav ul li {
+    flex-basis: 10%;
+    text-align: center;
+    padding: 0 2vw;
+}
+
+
+.post-nav ul li a {
+    text-decoration: none;
+    font-size: 2vw;
+    color: white;
+}
+
+#etc {
+    font-size: 4vw;
+}
+
+@media screen and (max-width: 800px) {
+    .posts {
+        flex-direction: column;
+    }
+
+    .post {
+        flex-basis: 100%;
+    }
+    
+    .post-nav ul{
+        width: 100%;
+    }
+}
+
+/* ------------------------------------------
+            END TUTORIAL STYLE
+------------------------------------------ */
+
+/* @media screen and (min-width: 600px) {
+    .main-area {
+        flex-basic: 100%;
+    } 
+} */
+/* ------------------------------------------
+            END MAIN STYLE
+------------------------------------------ */
+
+
+/* ------------------------------------------
+            START SIDEBAR-RIGHT STYLE
+------------------------------------------ */
+.sidebar-right {
+    background-color: blueviolet;
+    height: 100%;
+    flex-basis: 35%;
+    flex-basis: auto;
+    padding: 2em;
+    margin-right: 1.5%;
+    margin-top: 20px;
+}
+/* ------------------------------------------
+            END SIDEBAR-RIGHT STYLE
+------------------------------------------ */
+
 
