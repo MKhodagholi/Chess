@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ------------------------------------------
+            START HEADER STYLE
+------------------------------------------ */
+header {
+    display: flex;
+    flex-flow: row wrap;
+    color: dodgerblue;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+header .header-image {
+    position: relative;
+}
+
+header .header-image img {
+    width: 100%;
+}
+
+.header-content {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ededed;
+    padding: 2em;
+    width: 100%;
+}
+
+.header-logo {
+    display: flex;
+}
+
+.header-content .logo i {
+    font-size: 3vw;
+    color: darkblue;
+}
+
+.header-content h1.header-title {
+    font-size: 3vw;
+    margin: 0 .9em 0 .5em;
+}
+
+.header-nav {
+    flex-basis: 60%;
+}
+
+.header-nav ul {
+    list-style-type: none;
+    display: flex;
+    border: 1px ridge black;
+    justify-content: space-between;
+}
+
+.header-nav ul li {
+    flex-basis: 20%;
+    flex-grow: 1;
+    text-align: center;
+    padding: 1vw;
+    transition: background-color .7s ease;
+}
+
+
+.header-nav ul li a {
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: black;
+}
+
+.header-nav ul li:hover {
+    background-color: white;
+}
+
+#home {
+    background-color: black;
+}
+
+#home a {
+    color: white;
+}
+
+/* ------------------------------------------
+            END HEADER STYLE
+------------------------------------------ */
+
