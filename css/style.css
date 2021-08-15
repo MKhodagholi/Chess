@@ -157,7 +157,7 @@ section:first-child {
 .post {
     display: flex;
     background-color: white;
-    flex-flow: column wrap;
+    flex-flow: column;
     flex-basis: 49%;
     /* flex-grow: 1; */
     padding: 3vw;
@@ -265,7 +265,9 @@ section:first-child {
 
 @media screen and (max-width: 800px) {
     .posts {
-        flex-direction: column;
+        flex-direction: row;
+        flex-basis: 80%;
+        margin-right: 2vw;
     }
 
     .post {
@@ -461,11 +463,6 @@ footer p {
 ------------------------------------------ */
 
 @media screen and (max-width: 800px) {
-    .post {
-        width: 100%;
-        flex-basis: 100%;
-    }
-
     .sidebar-right {
         display: flex;
         flex-basis: 100%;
