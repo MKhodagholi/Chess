@@ -488,8 +488,12 @@ footer p:hover {
 
     header .header-nav {
         align-self: flex-end;
-        width: 70%;
+        width: 80%;
         margin-bottom: 0;
+    }
+
+    header .header-nav ul li a {
+        font-size: 3vw;
     }
 
     .content-area {
@@ -567,4 +571,139 @@ footer p:hover {
         font-size: 1.75vw;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+
+    .header-content {
+        background: none;
+        background: linear-gradient(180deg, #000000 0%, #000000ab 60%);
+    }
+
+    header .header-content .header-logo h1 {
+        font-size: 8vw;
+    }
+
+    header .header-content .header-logo i {
+        font-size: 6vw;
+        color: #08ceff;
+    }
+
+    header .header-content .header-logo {
+        margin-bottom: 30px;
+        align-self: center;
+    }
+
+
+    header .header-nav {
+        /* align-self: flex-end; */
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    header .header-nav ul {
+        flex-direction: column;
+    }
+
+    header .header-nav ul li {
+        text-align: left;
+        padding-left: 20px;
+        background-color: #ededed;
+    }
+
+    header .header-nav ul li a {
+        font-size: 4vw;
+    }
+
+
+    .content-area .main-area {
+        flex-basis: 100%;
+    }
+
+    .main-area .section-title {
+        font-size: 4vw;
+    }
+
+
+    .main-area .section-content .posts .post {
+        margin-right: 0;
+    }
+
+    .main-area .section-content .posts .post .post-title {
+        font-size: 5vw;
+    }
+
+    .main-area .section-content .posts .post .post-content p{
+        font-size: 3.6vw;
+    }
+
+
+    .main-area .section-content .posts .post .post-content ul li a{
+        font-size: 2.5vw;
+    }
+
+    .main-area .section-content .posts .post .post-content ul li a:hover{
+        font-size: 4vw;
+    }
+    
+    .main-area .section-content .posts .post .read-more a{ 
+        font-size: 3vw;
+    }
+
+    .post-nav ul{
+        width: 100%;
+    }
+
+    .about .section-content .section-content-disrt h3 {
+        font-size: 6vw;
+    }
+
+    .about .section-content .section-content-disrt p {
+        font-size: 3vw;
+        color: #333;
+    }
+    
+    .contact .section-content ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .contact .section-content ul li p{
+        margin-bottom: 20px;
+    }
+
+    .contact .section-content ul li i {
+        margin-top: 20px;
+        font-size: 10vw;
+    }
+
+    .contact .section-content ul li p {
+        font-size: 5vw;
+    }
+
+
+    .sidebar-right {
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar-right .widget{
+        text-align: center;
+        /* flex-basis: 100%; */
+        flex-flow: row wrap;
+        justify-content: space-between;
+        /* margin: auto; */
+        flex-grow: 1;
+    }
+
+    .sidebar-right .widget-content h3 {
+        font-size: 5vw;
+    }
+
+    .sidebar-right .widget-content ul li a  {
+        font-size: 3vw;
+    }
+
+    footer p {
+        font-size: 3vw;
+    }
 }
