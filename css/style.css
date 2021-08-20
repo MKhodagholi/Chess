@@ -452,8 +452,12 @@ footer {
 footer p {
     font-size: 2vw;
     color: palevioletred;
-
     text-align: center;
+    transition: color 1s;
+}
+
+footer p:hover {
+    color: navajowhite;
 }
 
 
@@ -463,6 +467,86 @@ footer p {
 ------------------------------------------ */
 
 @media screen and (max-width: 800px) {
+
+    header .header-content .header-logo h1 {
+        font-size: 6vw;
+    }
+
+    header .header-content .header-logo i {
+        font-size: 6vw;
+    }
+
+    header .header-content .header-logo {
+        margin-bottom: 30px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+
+    header .header-nav {
+        align-self: flex-end;
+        width: 70%;
+        margin-bottom: 0;
+    }
+
+    .content-area {
+        margin-top: 20px;
+    }
+
+    .content-area .main-area {
+        flex-basis: 90%;
+        margin: auto;
+    }
+
+    .main-area .section-title {
+        font-size: 3vw;
+    }
+
+    .main-area .section-content .posts .post .post-title {
+        font-size: 4vw;
+    }
+
+    .main-area .section-content .posts .post .post-content p{
+        font-size: 2.25vw;
+    }
+
+
+    .main-area .section-content .posts .post .post-content ul li a{
+        font-size: 1.5vw;
+    }
+
+    .main-area .section-content .posts .post .post-content ul li a:hover{
+        font-size: 1.9vw;
+    }
+    
+    .main-area .section-content .posts .post .read-more a{ 
+        font-size: 2vw;
+    }
+
+    .post-nav ul{
+        width: 95%;
+    }
+
+    .about .section-content .section-content-disrt h3 {
+        font-size: 5vw;
+    }
+
+    .about .section-content .section-content-disrt p {
+        font-size: 2.5vw;
+    }
+    
+    .contact .section-content ul li i {
+        font-size: 6vw;
+    }
+
+    .contact .section-content ul li p {
+        font-size: 2vw;
+    }
+
+
     .sidebar-right {
         display: flex;
         flex-basis: 100%;
@@ -474,4 +558,13 @@ footer p {
         margin: 1vw;
         flex-grow: 1;
     }
+
+    .sidebar-right .widget-content h3 {
+        font-size: 3vw;
+    }
+
+    .sidebar-right .widget-content ul li a  {
+        font-size: 1.75vw;
+    }
+
 }
